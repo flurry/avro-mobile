@@ -37,8 +37,7 @@ Open the xcode project in avro-ios-client. Run AvroClient > Sim or Device. When 
 Android Setup
 =====
 
-This depends on the latest Android SDK with API level 10 installed.
-Open the avro-android-client project. Run buildProtocol.xml followed by build.xml using ant (http://ant.apache.org/). Run your app on an Android device or emulator. By default, the client will attempt to send an Ad Request to http://localhost:8080 and will then parse and display the received Ad Response.
+This depends on the latest Android SDK with API level 10 installed. Open the avro-android-client project. Run "android update project --path ." from the avro-android-client directory. Modify the "server_url" string in res/values/strings.xml to be the IP address and port of your server. Run buildProtocol.xml followed by build.xml using ant (http://ant.apache.org/). Run your app on an Android device or emulator. The client will attempt to send an Ad Request to your server and will then parse and display the received Ad Response.
 
 License 
 =====

@@ -102,6 +102,7 @@ public class AvroClientActivity extends Activity implements OnClickListener
 				
 				outputStream = new ByteArrayOutputStream(1024);
 				res.getEntity().writeTo(outputStream);
+				http.close();
 				return outputStream.toString();
 	        }
 	        catch (IOException ioe)
