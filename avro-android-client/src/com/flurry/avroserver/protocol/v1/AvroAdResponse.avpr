@@ -1,0 +1,17 @@
+{
+  "protocol": "AvroAdResponse", "namespace": "com.flurry.avroserver.protocol.v1",
+  "types": [
+    {"name": "Ad", "type": "record",
+  		"fields": [
+  			{"name": "adSpace", "type": "string"},
+  			{"name": "adName", "type": "string"}
+  		]
+  	}, 
+  	{"name": "AdResponse", "type": "record",
+  		"fields": [
+  			{"name": "ads", "type": {"type": "array", "items": "Ad"}}, 
+  			{"name": "errors", "type": {"type": "array", "items": "string"}, "default":[] }
+  		]
+  	}
+   ]
+}

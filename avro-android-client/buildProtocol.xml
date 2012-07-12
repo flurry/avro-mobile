@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<project basedir="." default="copy" name="Avro Ad Protocol">
+	<!-- ===================================================================
+	      Compiler Preferences
+	     =================================================================== -->
+	<property name="debug" value="true" />
+	<property name="verbose" value="false" />	
+	<property name="deprecation" value="false" />
+	<property name="optimize" value="false" />
+	<property name="encoding" value="Cp1252" />
+	
+	<!-- ===================================================================
+	      Files and directories
+	     =================================================================== -->
+	<property name="source.dir" value="src" />
+	<property name="protocol.version" value="1" />
+	<property name="avro.source.dir" value="${source.dir}/com/flurry/avroserver/protocol/v${protocol.version}"/>
+	<property name="avro.schema.dir" value="${source.dir}/com/flurry/avroserver/protocol/v${protocol.version}" />
+	<property name="target.dir" value="protocol" />
+	<property name="avro.generated.dir" value="${target.dir}/generated-sources" />
+	<property name="avro.generated.files" value="${avro.generated.dir}/com/flurry/avroserver/protocol/v${protocol.version}" />
+	 
+	<!-- ===================================================================
+	      Classpath
+	     =================================================================== -->
+	<path id="full.classpath">
+		<pathelement location="lib/avro/avro-tools-1.6.2.jar"/>
+		<pathelement location="lib/paranamer-2.2/paranamer-ant-2.2.jar"/>
+		<pathelement location="lib/paranamer-2.2/paranamer-generator-2.2.jar"/>
+		<pathelement location="lib/qdox-1.9.2/qdox-1.9.2.jar"/>
+		<pathelement location="lib/asm-3.0/asm-3.0.jar"/>
+		<pathelement location="lib/jackson-core-asl-1.9.5/jackson-core-asl-1.9.5.jar"/>
+		<pathelement location="lib/jackson-mapper-asl-1.9.5/jackson-mapper-asl-1.9.5.jar"/>
+	</path>
+	
+	<!-- ===================================================================
+	      Cleaning target
+	     =================================================================== -->
+	<target name="clean">
+	    <delete dir="${target.dir}"/>
+	</target>
+	
+	<!-- ===================================================================
+	      Initialization target
+	     =================================================================== -->
+	<target name="init" depends="clean">
+		<mkdir dir="${target.dir}"/>
+		<mkdir dir="${avro.source.dir}"/>
+		<mkdir dir="${avro.generated.dir}" />
+		<mkdir dir="${avro.generated.files}" />
+	</target>
+	
+	<!-- ===================================================================
+	      Generate Compiled Sources target
+	     =================================================================== -->
+	
+	  <target name="generate" depends="init">
+	    <taskdef name="protocol"
+	             classname="org.apache.avro.compiler.specific.ProtocolTask">
+	    	<classpath refid="full.classpath" />
+	    </taskdef>
+	    <taskdef name="schema" classname="org.apache.avro.compiler.specific.SchemaTask">
+	      <classpath refid="full.classpath" />
+	    </taskdef>
+	    <taskdef name="paranamer" 
+	             classname="com.thoughtworks.paranamer.ant.ParanamerGeneratorTask">
+	      <classpath refid="full.classpath" />
+	    </taskdef>
+
+	    <protocol destdir="${avro.generated.dir}">
+	      <fileset dir="${avro.schema.dir}">
+	        <include name="**/*.avpr" />
+	      </fileset>
+	    </protocol>
+	    
+	  </target>
+
+	  <target name="copy" depends="generate">
+		  <copy todir="${avro.source.dir}">
+		  	<fileset dir="${avro.generated.files}">
+		  	</fileset>
+		  </copy>
+	  	 <delete dir="${target.dir}"/>
+	  </target>
+	
+</project>
+

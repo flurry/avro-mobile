@@ -1,0 +1,54 @@
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+
+# Mac OS X
+*.DS_Store
+
+# Generated Files
+*.o
+
+# Backup files
+*~.nib
+
+# Android built application files
+*.apk
+*.ap_
+
+# Java class files
+*.class
+
+# Java Server Package Files #
+*.jar
+*.war
+*.ear
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt

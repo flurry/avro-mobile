@@ -1,0 +1,17 @@
+{
+  "protocol": "AvroAdRequest", "namespace": "com.flurry.avroserver.protocol.v1",
+  "types": [ 
+  	{"name": "Location", "type": "record",
+  		"fields": [
+  			{"name": "lat", "type": "float", "default":0.0},
+  			{"name": "lon", "type": "float", "default":0.0}
+  		]
+  	},
+  	{"name": "AdRequest", "type": "record",
+  		"fields": [
+  			{"name": "adSpaceName", "type": "string"},
+  			{"name": "location", "type": "Location", "default": "null"}
+  		]
+  	}
+   ]
+}

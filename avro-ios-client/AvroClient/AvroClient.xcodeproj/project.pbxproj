@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9226308915AB2E8900535199 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9226308815AB2E8900535199 /* UIKit.framework */; };
+		9226308B15AB2E8900535199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9226308A15AB2E8900535199 /* Foundation.framework */; };
+		9226308D15AB2E8900535199 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9226308C15AB2E8900535199 /* CoreGraphics.framework */; };
+		9226309315AB2E8900535199 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9226309115AB2E8900535199 /* InfoPlist.strings */; };
+		9226309515AB2E8900535199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226309415AB2E8900535199 /* main.m */; };
+		9226309915AB2E8900535199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226309815AB2E8900535199 /* AppDelegate.m */; };
+		9226309C15AB2E8900535199 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226309B15AB2E8900535199 /* ViewController.m */; };
+		9226309F15AB2E8900535199 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9226309D15AB2E8900535199 /* ViewController.xib */; };
+		922630EA15AB35F400535199 /* allocation.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630AB15AB35F400535199 /* allocation.c */; };
+		922630EB15AB35F400535199 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630AC15AB35F400535199 /* array.c */; };
+		922630F115AB35F400535199 /* codec.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630C215AB35F400535199 /* codec.c */; };
+		922630F215AB35F400535199 /* consume-binary.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630C415AB35F400535199 /* consume-binary.c */; };
+		922630F315AB35F400535199 /* consumer.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630C515AB35F400535199 /* consumer.c */; };
+		922630F415AB35F400535199 /* datafile.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630C615AB35F400535199 /* datafile.c */; };
+		922630F515AB35F400535199 /* datum.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630C715AB35F400535199 /* datum.c */; };
+		922630F615AB35F400535199 /* datum_equal.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630C915AB35F400535199 /* datum_equal.c */; };
+		922630F715AB35F400535199 /* datum_read.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630CA15AB35F400535199 /* datum_read.c */; };
+		922630F815AB35F400535199 /* datum_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630CB15AB35F400535199 /* datum_size.c */; };
+		922630F915AB35F400535199 /* datum_skip.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630CC15AB35F400535199 /* datum_skip.c */; };
+		922630FA15AB35F400535199 /* datum_validate.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630CD15AB35F400535199 /* datum_validate.c */; };
+		922630FB15AB35F400535199 /* datum_value.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630CE15AB35F400535199 /* datum_value.c */; };
+		922630FC15AB35F400535199 /* datum_write.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630CF15AB35F400535199 /* datum_write.c */; };
+		922630FD15AB35F400535199 /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D015AB35F400535199 /* dump.c */; };
+		922630FE15AB35F400535199 /* encoding_binary.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D315AB35F400535199 /* encoding_binary.c */; };
+		922630FF15AB35F400535199 /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D415AB35F400535199 /* errors.c */; };
+		9226310015AB35F400535199 /* generic.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D515AB35F400535199 /* generic.c */; };
+		9226310115AB35F400535199 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D615AB35F400535199 /* io.c */; };
+		9226310215AB35F400535199 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D715AB35F400535199 /* map.c */; };
+		9226310315AB35F400535199 /* memoize.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D815AB35F400535199 /* memoize.c */; };
+		9226310415AB35F400535199 /* resolved-reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630D915AB35F400535199 /* resolved-reader.c */; };
+		9226310515AB35F400535199 /* resolved-writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630DA15AB35F400535199 /* resolved-writer.c */; };
+		9226310615AB35F400535199 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630DB15AB35F400535199 /* resolver.c */; };
+		9226310715AB35F400535199 /* schema.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630DC15AB35F400535199 /* schema.c */; };
+		9226310815AB35F400535199 /* schema_equal.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630DE15AB35F400535199 /* schema_equal.c */; };
+		9226310A15AB35F400535199 /* st.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E015AB35F400535199 /* st.c */; };
+		9226310B15AB35F400535199 /* string.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E215AB35F400535199 /* string.c */; };
+		9226310C15AB35F400535199 /* value-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E315AB35F400535199 /* value-hash.c */; };
+		9226310D15AB35F400535199 /* value-json.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E415AB35F400535199 /* value-json.c */; };
+		9226310E15AB35F400535199 /* value-read.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E515AB35F400535199 /* value-read.c */; };
+		9226310F15AB35F400535199 /* value-sizeof.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E615AB35F400535199 /* value-sizeof.c */; };
+		9226311015AB35F400535199 /* value-write.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E715AB35F400535199 /* value-write.c */; };
+		9226311115AB35F400535199 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E815AB35F400535199 /* value.c */; };
+		9226311215AB35F400535199 /* wrapped-buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 922630E915AB35F400535199 /* wrapped-buffer.c */; };
+		9226312715AB361E00535199 /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226311515AB361E00535199 /* dump.c */; };
+		9226312815AB361E00535199 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226311615AB361E00535199 /* error.c */; };
+		9226312915AB361E00535199 /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226311715AB361E00535199 /* hashtable.c */; };
+		9226312B15AB361E00535199 /* load.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226311D15AB361E00535199 /* load.c */; };
+		9226312E15AB361E00535199 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226312015AB361E00535199 /* memory.c */; };
+		9226312F15AB361E00535199 /* pack_unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226312115AB361E00535199 /* pack_unpack.c */; };
+		9226313015AB361E00535199 /* strbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226312215AB361E00535199 /* strbuffer.c */; };
+		9226313115AB361E00535199 /* utf.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226312415AB361E00535199 /* utf.c */; };
+		9226313215AB361E00535199 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 9226312615AB361E00535199 /* value.c */; };
+		9226314315AB6F2E00535199 /* AdNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9226314115AB6F2D00535199 /* AdNetworking.h */; };
+		9226314415AB6F2E00535199 /* AdNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226314215AB6F2E00535199 /* AdNetworking.m */; };
+		9226314615ADA19500535199 /* AdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9226314515ADA19300535199 /* AdDelegate.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9226308415AB2E8900535199 /* AvroClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvroClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9226308815AB2E8900535199 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9226308A15AB2E8900535199 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9226308C15AB2E8900535199 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9226309015AB2E8900535199 /* AvroClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AvroClient-Info.plist"; sourceTree = "<group>"; };
+		9226309215AB2E8900535199 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9226309415AB2E8900535199 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9226309615AB2E8900535199 /* AvroClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AvroClient-Prefix.pch"; sourceTree = "<group>"; };
+		9226309715AB2E8900535199 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9226309815AB2E8900535199 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9226309A15AB2E8900535199 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9226309B15AB2E8900535199 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9226309E15AB2E8900535199 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		922630AB15AB35F400535199 /* allocation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allocation.c; sourceTree = "<group>"; };
+		922630AC15AB35F400535199 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		922630AE15AB35F400535199 /* allocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocation.h; sourceTree = "<group>"; };
+		922630AF15AB35F400535199 /* basics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basics.h; sourceTree = "<group>"; };
+		922630B015AB35F400535199 /* consumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consumer.h; sourceTree = "<group>"; };
+		922630B115AB35F400535199 /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
+		922630B215AB35F400535199 /* errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
+		922630B315AB35F400535199 /* generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic.h; sourceTree = "<group>"; };
+		922630B415AB35F400535199 /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		922630B515AB35F400535199 /* legacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = legacy.h; sourceTree = "<group>"; };
+		922630B615AB35F400535199 /* refcount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refcount.h; sourceTree = "<group>"; };
+		922630B715AB35F400535199 /* resolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resolver.h; sourceTree = "<group>"; };
+		922630B815AB35F400535199 /* schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
+		922630B915AB35F400535199 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		922630BB15AB35F400535199 /* avro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avro.h; sourceTree = "<group>"; };
+		922630BC15AB35F400535199 /* avro_generic_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avro_generic_internal.h; sourceTree = "<group>"; };
+		922630BD15AB35F400535199 /* avro_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avro_private.h; sourceTree = "<group>"; };
+		922630C215AB35F400535199 /* codec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = codec.c; sourceTree = "<group>"; };
+		922630C315AB35F400535199 /* codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec.h; sourceTree = "<group>"; };
+		922630C415AB35F400535199 /* consume-binary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "consume-binary.c"; sourceTree = "<group>"; };
+		922630C515AB35F400535199 /* consumer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = consumer.c; sourceTree = "<group>"; };
+		922630C615AB35F400535199 /* datafile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datafile.c; sourceTree = "<group>"; };
+		922630C715AB35F400535199 /* datum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum.c; sourceTree = "<group>"; };
+		922630C815AB35F400535199 /* datum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datum.h; sourceTree = "<group>"; };
+		922630C915AB35F400535199 /* datum_equal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_equal.c; sourceTree = "<group>"; };
+		922630CA15AB35F400535199 /* datum_read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_read.c; sourceTree = "<group>"; };
+		922630CB15AB35F400535199 /* datum_size.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_size.c; sourceTree = "<group>"; };
+		922630CC15AB35F400535199 /* datum_skip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_skip.c; sourceTree = "<group>"; };
+		922630CD15AB35F400535199 /* datum_validate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_validate.c; sourceTree = "<group>"; };
+		922630CE15AB35F400535199 /* datum_value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_value.c; sourceTree = "<group>"; };
+		922630CF15AB35F400535199 /* datum_write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = datum_write.c; sourceTree = "<group>"; };
+		922630D015AB35F400535199 /* dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dump.c; sourceTree = "<group>"; };
+		922630D115AB35F400535199 /* dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dump.h; sourceTree = "<group>"; };
+		922630D215AB35F400535199 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
+		922630D315AB35F400535199 /* encoding_binary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding_binary.c; sourceTree = "<group>"; };
+		922630D415AB35F400535199 /* errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = errors.c; sourceTree = "<group>"; };
+		922630D515AB35F400535199 /* generic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = generic.c; sourceTree = "<group>"; };
+		922630D615AB35F400535199 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
+		922630D715AB35F400535199 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		922630D815AB35F400535199 /* memoize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memoize.c; sourceTree = "<group>"; };
+		922630D915AB35F400535199 /* resolved-reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "resolved-reader.c"; sourceTree = "<group>"; };
+		922630DA15AB35F400535199 /* resolved-writer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "resolved-writer.c"; sourceTree = "<group>"; };
+		922630DB15AB35F400535199 /* resolver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resolver.c; sourceTree = "<group>"; };
+		922630DC15AB35F400535199 /* schema.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = schema.c; sourceTree = "<group>"; };
+		922630DD15AB35F400535199 /* schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
+		922630DE15AB35F400535199 /* schema_equal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = schema_equal.c; sourceTree = "<group>"; };
+		922630E015AB35F400535199 /* st.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = st.c; sourceTree = "<group>"; };
+		922630E115AB35F400535199 /* st.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = st.h; sourceTree = "<group>"; };
+		922630E215AB35F400535199 /* string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
+		922630E315AB35F400535199 /* value-hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "value-hash.c"; sourceTree = "<group>"; };
+		922630E415AB35F400535199 /* value-json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "value-json.c"; sourceTree = "<group>"; };
+		922630E515AB35F400535199 /* value-read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "value-read.c"; sourceTree = "<group>"; };
+		922630E615AB35F400535199 /* value-sizeof.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "value-sizeof.c"; sourceTree = "<group>"; };
+		922630E715AB35F400535199 /* value-write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "value-write.c"; sourceTree = "<group>"; };
+		922630E815AB35F400535199 /* value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
+		922630E915AB35F400535199 /* wrapped-buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "wrapped-buffer.c"; sourceTree = "<group>"; };
+		9226311515AB361E00535199 /* dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dump.c; sourceTree = "<group>"; };
+		9226311615AB361E00535199 /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		9226311715AB361E00535199 /* hashtable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashtable.c; sourceTree = "<group>"; };
+		9226311815AB361E00535199 /* hashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashtable.h; sourceTree = "<group>"; };
+		9226311915AB361E00535199 /* jansson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson.h; sourceTree = "<group>"; };
+		9226311A15AB361E00535199 /* jansson_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson_config.h; sourceTree = "<group>"; };
+		9226311C15AB361E00535199 /* jansson_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson_private.h; sourceTree = "<group>"; };
+		9226311D15AB361E00535199 /* load.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load.c; sourceTree = "<group>"; };
+		9226312015AB361E00535199 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
+		9226312115AB361E00535199 /* pack_unpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pack_unpack.c; sourceTree = "<group>"; };
+		9226312215AB361E00535199 /* strbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strbuffer.c; sourceTree = "<group>"; };
+		9226312315AB361E00535199 /* strbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strbuffer.h; sourceTree = "<group>"; };
+		9226312415AB361E00535199 /* utf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf.c; sourceTree = "<group>"; };
+		9226312515AB361E00535199 /* utf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf.h; sourceTree = "<group>"; };
+		9226312615AB361E00535199 /* value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
+		9226314115AB6F2D00535199 /* AdNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdNetworking.h; sourceTree = "<group>"; };
+		9226314215AB6F2E00535199 /* AdNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdNetworking.m; sourceTree = "<group>"; };
+		9226314515ADA19300535199 /* AdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9226308115AB2E8900535199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9226308915AB2E8900535199 /* UIKit.framework in Frameworks */,
+				9226308B15AB2E8900535199 /* Foundation.framework in Frameworks */,
+				9226308D15AB2E8900535199 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9226307915AB2E8900535199 = {
+			isa = PBXGroup;
+			children = (
+				9226308E15AB2E8900535199 /* AvroClient */,
+				9226308715AB2E8900535199 /* Frameworks */,
+				9226308515AB2E8900535199 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9226308515AB2E8900535199 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9226308415AB2E8900535199 /* AvroClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9226308715AB2E8900535199 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9226308815AB2E8900535199 /* UIKit.framework */,
+				9226308A15AB2E8900535199 /* Foundation.framework */,
+				9226308C15AB2E8900535199 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9226308E15AB2E8900535199 /* AvroClient */ = {
+			isa = PBXGroup;
+			children = (
+				9226314515ADA19300535199 /* AdDelegate.h */,
+				9226314115AB6F2D00535199 /* AdNetworking.h */,
+				9226314215AB6F2E00535199 /* AdNetworking.m */,
+				922630A915AB354300535199 /* Avro Lib */,
+				9226309715AB2E8900535199 /* AppDelegate.h */,
+				9226309815AB2E8900535199 /* AppDelegate.m */,
+				9226309A15AB2E8900535199 /* ViewController.h */,
+				9226309B15AB2E8900535199 /* ViewController.m */,
+				9226309D15AB2E8900535199 /* ViewController.xib */,
+				9226308F15AB2E8900535199 /* Supporting Files */,
+			);
+			path = AvroClient;
+			sourceTree = "<group>";
+		};
+		9226308F15AB2E8900535199 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9226309015AB2E8900535199 /* AvroClient-Info.plist */,
+				9226309115AB2E8900535199 /* InfoPlist.strings */,
+				9226309415AB2E8900535199 /* main.m */,
+				9226309615AB2E8900535199 /* AvroClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		922630A915AB354300535199 /* Avro Lib */ = {
+			isa = PBXGroup;
+			children = (
+				9226311315AB35FB00535199 /* jansson */,
+				922630AA15AB35F400535199 /* src */,
+			);
+			name = "Avro Lib";
+			sourceTree = "<group>";
+		};
+		922630AA15AB35F400535199 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				922630AB15AB35F400535199 /* allocation.c */,
+				922630AC15AB35F400535199 /* array.c */,
+				922630AD15AB35F400535199 /* avro */,
+				922630BB15AB35F400535199 /* avro.h */,
+				922630BC15AB35F400535199 /* avro_generic_internal.h */,
+				922630BD15AB35F400535199 /* avro_private.h */,
+				922630C215AB35F400535199 /* codec.c */,
+				922630C315AB35F400535199 /* codec.h */,
+				922630C415AB35F400535199 /* consume-binary.c */,
+				922630C515AB35F400535199 /* consumer.c */,
+				922630C615AB35F400535199 /* datafile.c */,
+				922630C715AB35F400535199 /* datum.c */,
+				922630C815AB35F400535199 /* datum.h */,
+				922630C915AB35F400535199 /* datum_equal.c */,
+				922630CA15AB35F400535199 /* datum_read.c */,
+				922630CB15AB35F400535199 /* datum_size.c */,
+				922630CC15AB35F400535199 /* datum_skip.c */,
+				922630CD15AB35F400535199 /* datum_validate.c */,
+				922630CE15AB35F400535199 /* datum_value.c */,
+				922630CF15AB35F400535199 /* datum_write.c */,
+				922630D015AB35F400535199 /* dump.c */,
+				922630D115AB35F400535199 /* dump.h */,
+				922630D215AB35F400535199 /* encoding.h */,
+				922630D315AB35F400535199 /* encoding_binary.c */,
+				922630D415AB35F400535199 /* errors.c */,
+				922630D515AB35F400535199 /* generic.c */,
+				922630D615AB35F400535199 /* io.c */,
+				922630D715AB35F400535199 /* map.c */,
+				922630D815AB35F400535199 /* memoize.c */,
+				922630D915AB35F400535199 /* resolved-reader.c */,
+				922630DA15AB35F400535199 /* resolved-writer.c */,
+				922630DB15AB35F400535199 /* resolver.c */,
+				922630DC15AB35F400535199 /* schema.c */,
+				922630DD15AB35F400535199 /* schema.h */,
+				922630DE15AB35F400535199 /* schema_equal.c */,
+				922630E015AB35F400535199 /* st.c */,
+				922630E115AB35F400535199 /* st.h */,
+				922630E215AB35F400535199 /* string.c */,
+				922630E315AB35F400535199 /* value-hash.c */,
+				922630E415AB35F400535199 /* value-json.c */,
+				922630E515AB35F400535199 /* value-read.c */,
+				922630E615AB35F400535199 /* value-sizeof.c */,
+				922630E715AB35F400535199 /* value-write.c */,
+				922630E815AB35F400535199 /* value.c */,
+				922630E915AB35F400535199 /* wrapped-buffer.c */,
+			);
+			name = src;
+			path = "avro-c-1.6.2/src";
+			sourceTree = "<group>";
+		};
+		922630AD15AB35F400535199 /* avro */ = {
+			isa = PBXGroup;
+			children = (
+				922630AE15AB35F400535199 /* allocation.h */,
+				922630AF15AB35F400535199 /* basics.h */,
+				922630B015AB35F400535199 /* consumer.h */,
+				922630B115AB35F400535199 /* data.h */,
+				922630B215AB35F400535199 /* errors.h */,
+				922630B315AB35F400535199 /* generic.h */,
+				922630B415AB35F400535199 /* io.h */,
+				922630B515AB35F400535199 /* legacy.h */,
+				922630B615AB35F400535199 /* refcount.h */,
+				922630B715AB35F400535199 /* resolver.h */,
+				922630B815AB35F400535199 /* schema.h */,
+				922630B915AB35F400535199 /* value.h */,
+			);
+			path = avro;
+			sourceTree = "<group>";
+		};
+		9226311315AB35FB00535199 /* jansson */ = {
+			isa = PBXGroup;
+			children = (
+				9226311415AB361E00535199 /* src */,
+			);
+			name = jansson;
+			sourceTree = "<group>";
+		};
+		9226311415AB361E00535199 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9226311515AB361E00535199 /* dump.c */,
+				9226311615AB361E00535199 /* error.c */,
+				9226311715AB361E00535199 /* hashtable.c */,
+				9226311815AB361E00535199 /* hashtable.h */,
+				9226311915AB361E00535199 /* jansson.h */,
+				9226311A15AB361E00535199 /* jansson_config.h */,
+				9226311C15AB361E00535199 /* jansson_private.h */,
+				9226311D15AB361E00535199 /* load.c */,
+				9226312015AB361E00535199 /* memory.c */,
+				9226312115AB361E00535199 /* pack_unpack.c */,
+				9226312215AB361E00535199 /* strbuffer.c */,
+				9226312315AB361E00535199 /* strbuffer.h */,
+				9226312415AB361E00535199 /* utf.c */,
+				9226312515AB361E00535199 /* utf.h */,
+				9226312615AB361E00535199 /* value.c */,
+			);
+			name = src;
+			path = "avro-c-1.6.2/jansson/src";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9226313315AB411A00535199 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9226314315AB6F2E00535199 /* AdNetworking.h in Headers */,
+				9226314615ADA19500535199 /* AdDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9226308315AB2E8900535199 /* AvroClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 922630A215AB2E8900535199 /* Build configuration list for PBXNativeTarget "AvroClient" */;
+			buildPhases = (
+				9226308015AB2E8900535199 /* Sources */,
+				9226308115AB2E8900535199 /* Frameworks */,
+				9226308215AB2E8900535199 /* Resources */,
+				9226313315AB411A00535199 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvroClient;
+			productName = AvroClient;
+			productReference = 9226308415AB2E8900535199 /* AvroClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9226307B15AB2E8900535199 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9226307E15AB2E8900535199 /* Build configuration list for PBXProject "AvroClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9226307915AB2E8900535199;
+			productRefGroup = 9226308515AB2E8900535199 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9226308315AB2E8900535199 /* AvroClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9226308215AB2E8900535199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9226309315AB2E8900535199 /* InfoPlist.strings in Resources */,
+				9226309F15AB2E8900535199 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9226308015AB2E8900535199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9226309515AB2E8900535199 /* main.m in Sources */,
+				9226309915AB2E8900535199 /* AppDelegate.m in Sources */,
+				9226309C15AB2E8900535199 /* ViewController.m in Sources */,
+				922630EA15AB35F400535199 /* allocation.c in Sources */,
+				922630EB15AB35F400535199 /* array.c in Sources */,
+				922630F115AB35F400535199 /* codec.c in Sources */,
+				922630F215AB35F400535199 /* consume-binary.c in Sources */,
+				922630F315AB35F400535199 /* consumer.c in Sources */,
+				922630F415AB35F400535199 /* datafile.c in Sources */,
+				922630F515AB35F400535199 /* datum.c in Sources */,
+				922630F615AB35F400535199 /* datum_equal.c in Sources */,
+				922630F715AB35F400535199 /* datum_read.c in Sources */,
+				922630F815AB35F400535199 /* datum_size.c in Sources */,
+				922630F915AB35F400535199 /* datum_skip.c in Sources */,
+				922630FA15AB35F400535199 /* datum_validate.c in Sources */,
+				922630FB15AB35F400535199 /* datum_value.c in Sources */,
+				922630FC15AB35F400535199 /* datum_write.c in Sources */,
+				922630FD15AB35F400535199 /* dump.c in Sources */,
+				922630FE15AB35F400535199 /* encoding_binary.c in Sources */,
+				922630FF15AB35F400535199 /* errors.c in Sources */,
+				9226310015AB35F400535199 /* generic.c in Sources */,
+				9226310115AB35F400535199 /* io.c in Sources */,
+				9226310215AB35F400535199 /* map.c in Sources */,
+				9226310315AB35F400535199 /* memoize.c in Sources */,
+				9226310415AB35F400535199 /* resolved-reader.c in Sources */,
+				9226310515AB35F400535199 /* resolved-writer.c in Sources */,
+				9226310615AB35F400535199 /* resolver.c in Sources */,
+				9226310715AB35F400535199 /* schema.c in Sources */,
+				9226310815AB35F400535199 /* schema_equal.c in Sources */,
+				9226310A15AB35F400535199 /* st.c in Sources */,
+				9226310B15AB35F400535199 /* string.c in Sources */,
+				9226310C15AB35F400535199 /* value-hash.c in Sources */,
+				9226310D15AB35F400535199 /* value-json.c in Sources */,
+				9226310E15AB35F400535199 /* value-read.c in Sources */,
+				9226310F15AB35F400535199 /* value-sizeof.c in Sources */,
+				9226311015AB35F400535199 /* value-write.c in Sources */,
+				9226311115AB35F400535199 /* value.c in Sources */,
+				9226311215AB35F400535199 /* wrapped-buffer.c in Sources */,
+				9226312715AB361E00535199 /* dump.c in Sources */,
+				9226312815AB361E00535199 /* error.c in Sources */,
+				9226312915AB361E00535199 /* hashtable.c in Sources */,
+				9226312B15AB361E00535199 /* load.c in Sources */,
+				9226312E15AB361E00535199 /* memory.c in Sources */,
+				9226312F15AB361E00535199 /* pack_unpack.c in Sources */,
+				9226313015AB361E00535199 /* strbuffer.c in Sources */,
+				9226313115AB361E00535199 /* utf.c in Sources */,
+				9226313215AB361E00535199 /* value.c in Sources */,
+				9226314415AB6F2E00535199 /* AdNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9226309115AB2E8900535199 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9226309215AB2E8900535199 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9226309D15AB2E8900535199 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9226309E15AB2E8900535199 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		922630A015AB2E8900535199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		922630A115AB2E8900535199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		922630A315AB2E8900535199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AvroClient/AvroClient-Prefix.pch";
+				INFOPLIST_FILE = "AvroClient/AvroClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		922630A415AB2E8900535199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AvroClient/AvroClient-Prefix.pch";
+				INFOPLIST_FILE = "AvroClient/AvroClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9226307E15AB2E8900535199 /* Build configuration list for PBXProject "AvroClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				922630A015AB2E8900535199 /* Debug */,
+				922630A115AB2E8900535199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		922630A215AB2E8900535199 /* Build configuration list for PBXNativeTarget "AvroClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				922630A315AB2E8900535199 /* Debug */,
+				922630A415AB2E8900535199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9226307B15AB2E8900535199 /* Project object */;
+}

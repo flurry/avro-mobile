@@ -1,0 +1,69 @@
+<project name="avro_server" default="dist">
+  <description>Sample Avro Ad Server</description>
+
+  <property file="build.properties"/>
+
+  <!-- Classpath of external dependencies -->
+  <path id="server.classpath">
+    <fileset dir="${lib}">
+      <include name="*/*.jar"/>
+    </fileset>
+  </path>
+
+  <target name="clean" description="Cleans up the build artifacts and temporary directories">
+    <delete dir="${build}"/>
+  </target>
+
+  <target name="init">
+    <mkdir dir="${core.classes}"/>
+    <mkdir dir="${dir.distribute}"/>
+    <mkdir dir="${staging}"/>
+    <mkdir dir="www"/>
+  </target>
+
+  <target name="compile" depends="init">
+    <javac sourcepath="" srcdir="${src}" destdir="${core.classes}" debug="on"
+        target="1.6">
+      <include name="**/*.java"/>
+
+      <classpath refid="server.classpath"/>
+    </javac>
+  </target>
+
+  <target name="stage" depends="compile" description="Copy classes and runtime depenencies to the staging directory">
+    <!-- we unzip and copy all the runtime deps into a staging dir first -->
+    <unzip dest="${staging}">
+      <fileset dir="${lib}">
+        <include name="*/*.jar"/>
+      	<exclude name="*/avro-tools-1.6.2.jar"/> <!-- Only used for pre-compiling schema objects -->
+      </fileset>
+    </unzip>
+    <copy todir="${staging}" preservelastmodified="true">
+      <fileset dir="${core.classes}">
+        <include name="**/*"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="dist" depends="stage" description="Assembles the server">
+    <jar destfile="${jar.outfile-server}">
+      <fileset dir="${staging}">
+        <include name="javax/servlet/**/*" />
+      	<include name="org/eclipse/jetty/**/*" />
+      	<include name="com/flurry/**/*" />
+      	<include name="org/apache/avro/**/*" />
+      	<include name="org/codehaus/jackson/**/*" />
+      </fileset>
+      <manifest>
+        <!-- Application entry point -->
+        <attribute name="Main-Class"
+          value="com.flurry.avroserver.AvroServer"/>
+        <attribute name="Implementation-Vendor" value="Flurry, Inc."/>
+        <attribute name="Implementation-Title" value="Sample Avro Ad Server"/>
+        <attribute name="Implementation-Version" value="${server.version}"/>
+      </manifest>
+    </jar>
+  </target>
+
+</project>
+

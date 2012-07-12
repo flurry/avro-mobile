@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Avro Android Client</string>
+    <string name="send_request">Send Request</string>
+    <string name="response">Response</string>
+    <string name="server_url">http://localhost:8080/</string>
+</resources>
