@@ -3,7 +3,7 @@ Avro on Mobile
 
 Avro Example with Java Server, iOS Client, Android Client
 
-Apache Avro (http://avro.apache.org) is being used as the data serialization tool at Flurry for our ad serving over iOS and Android. This project serves as an illustration of our deployment. For more information into our use of Apache Avro see http://tech.flurry.com/<rest of link>
+Apache Avro (http://avro.apache.org) is being used as the data serialization tool at Flurry for our ad serving over iOS and Android. This project serves as an illustration of our deployment.
 
 This example uses an embedded Jetty Server for ease of deployment and testing (and because we think Jetty is awesome). Jetty is available here: 
 http://www.eclipse.org/jetty/
